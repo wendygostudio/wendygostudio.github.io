@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wendygo Studio — browser tools that stay local</title>
-  <meta name="description" content="Wendygo Studio makes browser extensions for developers, sysadmins and content creators. TextForge and FrameForge run entirely in your browser — no upload, no permissions, no data collected." />
+  <meta name="description" content="Wendygo Studio makes browser extensions for developers, sysadmins and content creators. TextForge, FrameForge and ScrubForge run entirely in your browser — no upload, no permissions, no data collected." />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -193,7 +193,7 @@
   <section class="hero">
     <div class="eyebrow">Wendygo Studio</div>
     <h1>Browser tools that<br><em>stay local.</em></h1>
-    <p class="hero-sub">Extensions for Chrome and Edge that transform text and images right in your browser. No upload, no server, no permissions — your data never leaves your machine.</p>
+    <p class="hero-sub">Extensions for Chrome and Edge that transform text, resize images, and sanitize infrastructure configs — right in your browser. No upload, no server, no data collected.</p>
     <div class="hero-badges">
       <span class="badge"><span class="dot"></span>Zero permissions</span>
       <span class="badge"><span class="dot"></span>100% local processing</span>
@@ -206,7 +206,7 @@
     <div class="section-inner">
       <div class="section-label">Extensions</div>
       <h2 class="section-title">The Forge family</h2>
-      <p class="section-sub">Two tools, one philosophy: powerful utilities that run entirely in your browser.</p>
+      <p class="section-sub">Three tools, one philosophy: powerful utilities that run entirely in your browser.</p>
       <div class="amber-rule" style="margin-top:24px;"></div>
 
       <div class="product-grid">
@@ -286,6 +286,39 @@
           </div>
         </div>
 
+        <!-- ScrubForge -->
+        <div class="product-card">
+          <div class="product-head">
+            <div class="product-mark">S</div>
+            <div>
+              <div class="product-name">ScrubForge</div>
+              <div class="product-tagline">paste · scrub · ask</div>
+            </div>
+          </div>
+          <p class="product-desc">A config sanitizer for sysadmins and network engineers. Paste your config, ScrubForge detects and replaces sensitive data, then ask AI about it — without exposing your infrastructure.</p>
+          <ul class="feature-list">
+            <li>35+ patterns: IPs, MACs, passwords, keys, certs, hostnames</li>
+            <li>12+ vendors: Cisco, Fortinet, MikroTik, Juniper, Palo Alto…</li>
+            <li>Consistent tokens preserve topology and logic</li>
+            <li>BYOK — use your own key with any major AI provider</li>
+            <li class="pro-feat">Format-aware tokens: SHA-512 stays SHA-512 (Pro)</li>
+            <li class="pro-feat">Integrated AI chat with multi-turn (Pro)</li>
+            <li class="pro-feat">Custom dictionary for manual patterns (Pro)</li>
+            <li class="pro-feat">Obfuscation profiles and audit mode (Expert)</li>
+            <li class="pro-feat">Batch processing and question obfuscation (Expert)</li>
+          </ul>
+          <div class="product-footer">
+            <div class="price-row">
+              <span class="price-free">Free</span>
+              <span class="price-pro">€5.99<small style="font-size:12px;font-weight:400">/mo</small></span>
+              <span class="price-once">or €9.99/mo Expert</span>
+            </div>
+            <a class="btn-store" href="https://chromewebstore.google.com/" target="_blank" rel="noopener">
+              ↗ Chrome Web Store
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -309,12 +342,12 @@
         <div class="step">
           <div class="step-n">03 — GO PRO</div>
           <div class="step-title">Simple pricing</div>
-          <div class="step-desc">TextForge Pro from €3.99/mo or €19.99/yr. FrameForge Pro is a one-time €9.99 — pay once, keep it forever.</div>
+          <div class="step-desc">TextForge Pro from €3.99/mo. FrameForge Pro is a one-time €9.99. ScrubForge Pro from €5.99/mo or Expert at €9.99/mo.</div>
         </div>
         <div class="step">
           <div class="step-n">04 — KEEP IT</div>
           <div class="step-title">Your choice of model</div>
-          <div class="step-desc">FrameForge: one payment, yours forever. TextForge: subscribe monthly or save with annual — cancel any time.</div>
+          <div class="step-desc">FrameForge: one payment, yours forever. TextForge and ScrubForge: subscribe monthly or save with annual — cancel any time.</div>
         </div>
       </div>
     </div>
@@ -324,7 +357,7 @@
     <div class="section-inner">
       <div class="section-label">Privacy</div>
       <h2 class="section-title">Your data stays with you</h2>
-      <p class="section-sub">Both extensions are built around a single constraint: nothing leaves your browser.</p>
+      <p class="section-sub">All our extensions are built around a single constraint: nothing leaves your browser.</p>
       <div class="privacy-grid">
         <div class="priv-item">
           <div class="priv-icon">🔒</div>
@@ -352,6 +385,13 @@
           <div>
             <div class="priv-label">Images never uploaded</div>
             <div class="priv-desc">FrameForge processes images locally. Your photos never leave your machine.</div>
+          </div>
+        </div>
+        <div class="priv-item">
+          <div class="priv-icon">🔑</div>
+          <div>
+            <div class="priv-label">BYOK — your key, your data</div>
+            <div class="priv-desc">ScrubForge uses your own AI API key. We never see, proxy, or store your queries.</div>
           </div>
         </div>
       </div>
